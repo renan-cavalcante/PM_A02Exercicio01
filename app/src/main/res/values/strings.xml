@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A02Exercicio01</string>
+    <string name="valor_a">Valor de A:</string>
+    <string name="valor_b">Valor de B:</string>
+    <string name="valor_c">Valor de C:</string>
+    <string name="calcular">Calcular:</string>
+    <string name="x1">X1: </string>
+    <string name="x2">X2: </string>
+    <string name="x">X: </string>
+    <string name="sem_raiz">Não há raízes reais.</string>
+    <string name="nao_segundo_grau">Não é uma equação de segundo grau</string>
+</resources>

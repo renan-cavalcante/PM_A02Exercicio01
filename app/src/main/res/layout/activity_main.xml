@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/valor_a"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/valor_b"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etA"
+        app:layout_constraintTop_toBottomOf="@+id/etA" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/valor_c"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etB"
+        app:layout_constraintTop_toBottomOf="@+id/etB" />
+
+    <Button
+        android:id="@+id/btCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+
+        android:text="@string/calcular"
+        app:layout_constraintStart_toStartOf="@+id/etC"
+        app:layout_constraintTop_toBottomOf="@+id/etC" />
+
+
+    <TextView
+        android:id="@+id/tvX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="@+id/etC"
+        app:layout_constraintTop_toBottomOf="@+id/btCalc" />
+
+    <TextView
+        android:id="@+id/tvX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="@+id/tvX1"
+        app:layout_constraintTop_toBottomOf="@+id/tvX1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
